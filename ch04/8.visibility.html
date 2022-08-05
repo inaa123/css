@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>visibility</title>
+    <style>
+        div {
+            padding: 3rem;
+            margin: 1rem;
+            float: left;
+        }
+
+        .one {
+            background: red;
+        }
+
+        .two {
+            background: orange;
+            visibility: hidden; /* 투명인간: 자신공간차지,안보임 */
+        }
+
+        .three {
+            background: green;
+        }
+
+        .one2 {
+            background: red;
+        }
+
+        .two2 {
+            background: orange;
+            display: none; /* 영혼: 공간자체X, 안보임 */
+        }
+
+        .three2 {
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div class='one'></div>
+    <div class='two'></div>
+    <div class='three'></div>
+
+    <div class='one2'></div>
+    <div class='two2'></div>
+    <div class='three2'></div>
+</body>
+</html>
